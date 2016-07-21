@@ -1,0 +1,753 @@
+    {% load staticfiles %}
+images <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    
+<head>                            
+    <!-- Basic Page Needs
+    ================================================== -->
+        <meta charset="utf-8">
+        <title>KOSS-Kharagpur Open Source Society</title>
+        <meta name="description" content="">
+        <!-- Mobile Specific Metas
+    ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="logo2.jpg" />
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+         <!-- CSS
+         ================================================== -->
+        <!-- Bootstrap -->
+
+        <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}"/>
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}"/>
+        <!-- Animation -->
+        <link rel="stylesheet" href="{% static "css/animate.css" %}" />
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="{% static "css/owl.carousel.css" %}"/>
+         <link rel="stylesheet" href="{% static "css/owl.theme.css" %}"/>
+         <!-- Pretty Photo -->
+         <link rel="stylesheet" href="{% static "css/prettyPhoto.css" %}"/>
+         <!-- colro style -->
+         <link rel="stylesheet" href="{% static "css/red.css" %}"/>
+         <!-- Bx slider -->
+         <link rel="stylesheet" href="{% static "css/jquery.bxslider.css" %}"/>
+
+        <!-- Template styles-->
+        <link rel="stylesheet" href="{% static "css/custom.css" %}" />
+        <!-- REsponsive -->
+        <link rel="stylesheet" href="{% static "css/responsive.css" %}" />
+        <link rel="stylesheet" href="{% static "css/jquery.fancybox8cbb.css?v=2.1.5" %}" type="text/css" media="screen" />
+      
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500' rel='stylesheet' type='text/css'>
+       
+    </head>
+
+ <body data-spy="scroll" data-target=".navbar-fixed-top">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <header id="section_header" class="navbar-fixed-top main-nav" role="navigation">
+      <div class="container">
+        <!-- <div class="row"> -->
+                 <div class="navbar-header ">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{% url 'home:index' %}">
+                            <img src="{% static "images/logo2.jpg" %}" alt="" class="img-responsive">
+                        </a>
+                 </div><!--Navbar header End-->
+                  <nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="active">
+                                <a href="{% url 'home:index' %}" data-scroll  class="active">Home </a>
+                            </li>
+                            
+                            <li>
+                              <a href="{% url 'home:events' %}" data-scroll  >Events </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'home:index' %}#about" data-scroll>About Us </a>
+                            </li>
+                            <li>
+                              <a href="{% url 'home:index' %}#team" data-scroll  >Our Team </a>
+                            </li>
+
+                            <li>
+                              <a href="{% url 'home:index' %}#contact" data-scroll >Contact Us</a>
+                            </li>
+                        </ul>
+                     </nav>
+                </div><!-- /.container-fluid -->
+</header>
+    <section id="portfolio_single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-header text-center">
+                        <h2>Google Summer of Code Introductory Seminary and GSoC follow up session </h2>
+                    </div>
+                </div>  <!-- Col-md-12 End -->
+            </div>
+        </div>
+    </section>
+    <section id="portfolio-single">
+        <div class="container">
+            <!-- Portfolio item row start -->
+            <div class="row">
+                <!-- Portfolio item slider start -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="portfolio-slider-wrapper">
+                        <ul class="portfolio-slider">
+                            <li><img  src="{% static "images/portfolio/gsoc/gsoc1.jpg" %}" alt=""  class="img-responsive" style="object-fit: cover" /></li>
+                            <li><img  src="{% static "images/portfolio/gsoc/gsoc2.jpg"  %}" alt="" class="img-responsive" style="object-fit: cover" /></li>
+                            <li><img src="{% static "images/portfolio/gsoc/gsoc3.jpg"  %}" alt="" class="img-responsive" style="object-fit: cover" /></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+                <!-- Portfolio item slider end -->
+            </div><!-- Portfolio item row end -->
+
+        </div><!-- Portfolio item container end -->
+</section>  <!-- Portfolio Section End -->
+
+<section id="port-content">
+    <div class="container">
+        <div class="row">
+             <!-- sidebar start -->
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="sidebar">
+                        <div class="portfolio-desc">
+                            <h4>Event Overview</h4>
+                            <p>
+<span class="teaser">text goes here</span>
+
+<span class="complete"> this is the 
+complete text being shown</span>
+
+<span class="more">more...</span>
+
+                            </p>
+                       <!-- <p><a href="#" class="btn btn-main featured">Project Link</a></p>  -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="right-sidebar">
+                    <h4>Event Details</h4>
+                    <ul class="circle">
+                        <li><span>date : </span> 17 January 2015 and furthur</li>                       
+                        <li><span>Category :</span> Open Source</li>
+                    </ul>
+                </div>
+                <!--
+                <div class="share">-->
+                    <!-- <h4>Share this :</h4> -->
+                    <!--<ul class="social-contact list-inline text-left">
+                        <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
+                        <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</section>
+ 
+
+ <section id="portfolio_single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-header text-center">
+                        <h2>Applied CS with Android workshop</h2>
+                       <!-- <ul class="breadcrumb">
+                            <li>home</li>
+                            <li>portfolio</li>
+                            <li>portfolio details</li>
+                        </ul>-->
+                    </div>
+                </div>  <!-- Col-md-12 End -->
+            </div>
+        </div>
+    </section>
+    <section id="portfolio-single">
+        <div class="container">
+            <!-- Portfolio item row start -->
+            <div class="row">
+                <!-- Portfolio item slider start -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="portfolio-slider-wrapper">
+                        <ul  class="portfolio-slider">
+                            <li><img src="{% static "images/portfolio/android/workshop1.jpg" %}" alt="" class="img-responsive" style="object-fit: cover"/></li>
+                            <li><img src="{% static "images//portfolio/android/workshop2.jpg" %}" alt="" class="img-responsive" style="object-fit: cover"/></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- Portfolio item slider end -->
+            </div><!-- Portfolio item row end -->
+
+        </div><!-- Portfolio item container end -->
+</section>  <!-- Portfolio Section End -->
+
+
+<section id="port-content">
+    <div class="container">
+        <div class="row">
+             <!-- sidebar start -->
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="sidebar">
+                        <div class="portfolio-desc">
+                            <h4>Project Overview</h4>
+                            
+                            <p><div id="android">KOSS had held an Android workshop under the Google programme where the aim was to teach the participants and students the basics of Android , besides data structures and algorithms. <br><br> 	
+&nbsp;&nbsp;&nbsp;&nbsp;The entire session was broken into 4-5 modules, each module covering a specific topic along with an assignment relevant to that topic.  <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;The first session included a rudimentary introduction to Java as a programming language and its comparison with C, the former being an OOP (Object Oriented Programming ) language. It also dealt with basics of Android , namely how to create a project, run the app, and build a simple user interface . The details of Android lifecycle with regards to starting , pausing and resuming , stopping and restarting and recreating an Activity was also emphasized along with intents.  <br><br>
+The relevant links are given below:<br>
+<a target=_"blank"  href= "https://docs.oracle.com/javase/tutorial/java/index.html">Intro to Java</a><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;The second session covered the following  topics – hash set, hash map, arraylists and binary search along with some information on stacks and queues and games based on them.<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;The third session focused more on advanced data structures, namely binary trees ( including binary search trees) , heaps , tries and priority queues and their implementation<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;The fourth session dealt more exclusively on graphs and their implementation , specifically A* search and the puzzle game that required the use of the same. <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;The fifth session involved a run-through of all the puzzles and apps made and fixing the bugs and code of any. <br><br>
+The list of the games the participants were asked to make can be found in the drive attached below.<br><br>
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;In case you feel that you have missed out or that you wish that you could have been a part of it,
+register <a  target=_"blank" href="https://cswithandroid.withgoogle.com/content">here</a> and <a  target=_"blank" href="http://tinyurl/final-reg-koss">here</a> for final course registration .  The codes have to be submitted to our <a target=_"blank"  href="github.com/kossiitkgp"> GITHUB account</a> <br>
+Also, it is required for you to create an app on your own and submit it. Certificates are assured and this course is free of cost. <br>
+ <a target=_"blank" href="http://developer.android.com/training/basics/firstapp/creating-project.html">Basics</a> <br>
+<a target=_"blank"  href="http://developer.android.com/guide/components/intents-filters.html">Android Lifecycle</a> <br>
+<a  target=_"blank" href="http://developer.android.com/guide/components/intents-filters.html">More on intents</a> <br>
+Slides are provided <a  target=_"blank" href"http://docs.google.com/presentation/d/1MevGXhFF_SbDmMYTZyRoj_p6E6PVDv9LYOlijOEtCNhY/edit?usp=sharing">here</a> <br><br>
+
+</div>
+
+							 </div>
+                           <p>
+                      <!--  <p><a href="#" class="btn btn-main featured">Project Link</a></p>-->
+                   
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="right-sidebar">
+                    <h4>Event Details</h4>
+                    <ul class="circle">
+                        <li><span>date : </span> 19 March onwards</li>
+                        <li><span>Category :</span> Androids</li>
+                    </ul>
+                </div>
+                <!--
+                <div class="share">-->
+                    <!-- <h4>Share this :</h4> -->
+                    <!--
+                    <ul class="social-contact list-inline text-left">
+                        <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
+                        <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio_single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-header text-center">
+                        <h2>3D printing Workshop</h2>
+                        <!--<ul class="breadcrumb">
+                            <li>home</li>
+                            <li>portfolio</li>
+                            <li>portfolio details</li>
+                        </ul>-->
+                    </div>
+                </div>  <!-- Col-md-12 End -->
+            </div>
+        </div>
+    </section>
+    <section id="portfolio-single">
+        <div class="container">
+            <!-- Portfolio item row start -->
+            <div class="row">
+                <!-- Portfolio item slider start -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="portfolio-slider-wrapper">
+                        <ul class="portfolio-slider">
+                            <li><img src="{% static "images//portfolio/printing_3d/pic1.jpg" %}" alt="" style="object-fit: cover" class="img-responsive"/></li>
+                            <li><img src="{% static "images//portfolio/printing_3d/pic2.jpg" %}" alt="" style="object-fit: cover" class="img-responsive"/></li>
+                            <li><img src="{% static "images//portfolio/printing_3d/pic3.jpg" %}" alt="" style="object-fit: cover" class="img-responsive"/></li>
+                            <li><img src="{% static "images//portfolio/printing_3d/pic4.jpg" %}" alt="" style="object-fit: cover" class="img-responsive"/></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Portfolio item slider end -->
+            </div><!-- Portfolio item row end -->
+
+        </div><!-- Portfolio item container end -->
+</section>  <!-- Portfolio Section End -->
+
+<section id="port-content">
+    <div class="container">
+        <div class="row">
+             <!-- sidebar start -->
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="sidebar">
+                        <div class="portfolio-desc">
+                            <h4>Project Overview</h4>
+                            <p><div id="article">The 3D printing workshop was conducted by Kharagpur Open Source Society, in association with NSSC (National Students’ Space Challenge ) , powered by Srijan Creations, a Kolkata based 3D Printing institute. <br><br> 
+3 D printing can be classified mainly into these following types:
+1) FDM- FDM stands for Fused Deposition Modeling . It consists of an extruder- heating arrangement. The printing material or thermoplastic is fed into printer, where it is heated beyond it's melting point and is then deposited or extruded in layers to create a 3D printed object. This technique was demonstrated in this workshop. This is an example of additive manufacturing, and amongst 3D printing processes, it is the cheapest but time-consuming. In fact the greatest expense incurred in FDM manufacturing is the time taken – the cost of FDM printing is approximately Rs 400 per hour, while the raw material comes at Rs 2 per gram. The printer (FAB X), having a single extruder starts from the 20 k range . Those having dual extruders, one for the support material and the other for the finish product , are in the range of 1-1.5 lacs.
+2) SLA – SLA stands for StereoLithoGraphy. It is an additive method like FDM , but differs in the technique used. It employs a process called curing where in a curable photoploymer resin is hardened by applying a focused light or UV light or laser light. In case of SLA printers, the lasers draw the layers, while in DLP (Digital Light Processing ) , an entire layer (a 2 –dimensional plane) of the model is projected at once in the resin bath. Consequently the DLP models are faster than the laser SLA ones. They are more reliable but easier to maintain.
+The standard filament rolls used in FDM are thermoplastic in nature , though most are also blended with nylon, wood, ceramics ,metals, carbon fibres ,etc . They can vary in color and texture, unlike in SLA , which has a pre-determined choice of resin, and is comparatively more expensive.
+
+The applicability of 3D printing is immense. It finds its use in engineering rapid prototypes in several sectors :
+1) Medical – 3D printing can be used to create prosthetic and  implantable body parts which require a high degree of precision and smooth finish.<br>
+2) Architecture – It is a relatively fast and inexpensive way of creating primitive models. In fact China employs 3D printing in creating actual houses and buildings.<br>
+3) Fashion- Jewellery, watches, ornaments, miniature statues and similar such objects can be designed on paper and then recreated as working models. They can easily pass off as those made in factories. Thus it has a huge commercial market, as anyone can make a 3 dimensional replica of their treasured moment or person, like wedding photographs or the match-box cars.<br>
+4) It also has a major RND aspect in the field of developing materials that can be used for printing. <br>
+							
+							</div></p>
+                            
+                       <!-- <p><a href="#" class="btn btn-main featured">Project Link</a></p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="right-sidebar">
+                    <h4>Event Details</h4>
+                    <ul class="circle">
+                        <li><span>date : </span> 31 October 2015</li>
+                       <!-- <li><span>client : </span>Enavto</li>
+                        <li><span>Category :</span> Web design</li>-->
+                    </ul>
+                </div>
+                <!--
+                <div class="share">-->
+                    <!-- <h4>Share this :</h4> -->
+                    <!--
+                    <ul class="social-contact list-inline text-left">
+                        <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
+                        <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio_single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-header text-center">
+                        <h2>Hackathon</h2>
+                        <!--<ul class="breadcrumb">
+                            <li>home</li>
+                            <li>portfolio</li>
+                            <li>portfolio details</li>
+                        </ul>-->
+                    </div>
+                </div>  <!-- Col-md-12 End -->
+            </div>
+        </div>
+    </section>
+    <section id="portfolio-single">
+        <div class="container">
+            <!-- Portfolio item row start -->
+            <div class="row">
+                <!-- Portfolio item slider start -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="portfolio-slider-wrapper">
+                        <ul class="portfolio-slider">
+                            <li><img src="{% static "images//portfolio/hackathon.jpg" %}" style="object-fit: cover" alt="" class="img-responsive"/></li>
+                            <li><img src="{% static "images//slider/s2.jpg" %}" alt="" style="object-fit: cover" class="img-responsive"/></li>
+                            <li><img src="{% static "images//slider/s1.jpg" %}" alt="" style="object-fit: cover" class="img-responsive"/></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Portfolio item slider end -->
+            </div><!-- Portfolio item row end -->
+
+        </div><!-- Portfolio item container end -->
+</section>  <!-- Portfolio Section End -->
+
+<section id="port-content">
+    <div class="container">
+        <div class="row">
+             <!-- sidebar start -->
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="sidebar">
+                        <div class="portfolio-desc">
+                            <h4>Event Overview</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, quasi nisi optio, earum facilis perspiciatis temporibus nobis nam velit incidunt. Recusandae accusamus pariatur, explicabo iure ea ex perspiciatis perferendis quam! Oat cake oat cake dessert brownie. Gummies tiramisu tart jujubes jelly beans macaroon danish pie muffin. Soufflé pudding brownie pudding fruitcake marshmallow I love. Dragée jujubes chocolate cake jelly beans.
+                            </p>
+                        <p><a href="#" class="btn btn-main featured">Project Link</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="right-sidebar">
+                    <h4>Project Details</h4>
+                    <ul class="circle">
+                        <li><span>date : </span> 15 May 2014</li>
+                        <li><span>client : </span>Enavto</li>
+                        <li><span>Category :</span> Web design</li>
+                    </ul>
+                </div>
+                <div class="share">
+                    <!-- <h4>Share this :</h4> -->
+                    <ul class="social-contact list-inline text-left">
+                        <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio_single">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="portfolio-header text-center">
+                        <h2>Fresher introduction an Selection</h2>
+                       <!-- <ul class="breadcrumb">
+                            <li>home</li>
+                            <li>portfolio</li>
+                            <li>portfolio details</li>
+                        </ul>-->
+                    </div>
+                </div>  <!-- Col-md-12 End -->
+            </div>
+        </div>
+    </section>
+    <section id="portfolio-single">
+        <div class="container">
+            <!-- Portfolio item row start -->
+            <div class="row">
+                <!-- Portfolio item slider start -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="portfolio-slider-wrapper">
+                        <ul class="portfolio-slider">
+                            <li><img src="{% static "images//portfolio/fresher_intro/pic1.jpg" %}" style="object-fit: cover" alt="" class="img-responsive"/></li>
+                            <li><img src="{% static "images//portfolio/fresher_intro/pic2.jpg" %}" style="object-fit: cover" alt="" class="img-responsive"/></li>
+                            <li><img src="{% static "images//portfolio/fresher_intro/pic3.jpg" %}" style="object-fit: cover" alt="" class="img-responsive"/></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Portfolio item slider end -->
+            </div><!-- Portfolio item row end -->
+
+        </div><!-- Portfolio item container end -->
+</section>  <!-- Portfolio Section End -->
+
+<section id="port-content">
+    <div class="container">
+        <div class="row">
+             <!-- sidebar start -->
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="sidebar">
+                        <div class="portfolio-desc">
+                            <h4>Event Overview</h4>
+                            <p>Every year, freshers are introduced to the the work of KOSS & new members are recruited to the club.
+                            </p>
+                     <!--   <p><a href="#" class="btn btn-main featured">Project Link</a></p> -->
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <div class="right-sidebar">
+                    <h4>Project Details</h4>
+                    <ul class="circle">
+                        <li><span>date : </span> 15 May 2014</li>
+                        <li><span>client : </span>Enavto</li>
+                        <li><span>Category :</span> Web design</li>
+                    </ul>
+                </div>-->
+                <!--
+                <div class="share"> -->
+                    <!-- <h4>Share this :</h4> -->
+                    <!--
+                    <ul class="social-contact list-inline text-left">
+                        <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-google-plus"></i> </a></li>
+                        <li><a href="#"> <i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"> <i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--
+<section id="related">
+    <div class="container">
+        <div class="row">
+             <div class="related text-center">
+                <h3>Related Projects</h3>-->
+
+                <!-- <hr> -->
+                
+                <!--
+                <div class="col-md-3 col-sm-6">
+                    <div class="rel-post">
+                        <a href="#">
+                            <img src="{% static "images//blog/pic6.jpg" %}" alt="" class="img-responsive">
+                            <div class="caption">
+                                <h4>New speaker</h4>
+                                <p>Graphics design</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="rel-post">
+                        <a href="#">
+                            <img src="{% static "images//blog/pic7.jpg" %}" alt="" class="img-responsive">
+                            <div class="caption">
+                                <h4>Skyscaper</h4>
+                               <p>photograph</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="rel-post">
+                        <a href="#">
+                            <img src="{% static "images//blog/pic8.jpg" %}" alt="" class="img-responsive">
+                            <div class="caption">
+                                <h4>New website</h4>
+                               <p>Web design</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="rel-post">
+                        <a href="#">
+                            <img src="{% static "images//blog/pic11.jpg" %}" alt="" class="img-responsive">
+                            <div class="caption">
+                                <h4>Top rider</h4>
+                                <p>Wordpress</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<!-- Footer Start -->
+<br><br>
+<section id="footer">
+    <div class="footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <h3 class="menu_head">Main Menu</h3>
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="{% url 'home:index' %}">Home</a></li>
+                           <!-- <li><a href="#service">Service</a></li>-->
+                           
+                           <!-- <li><a href="#blog">Blog</a></li>-->
+
+                            <li><a href="{% url 'home:index' %}#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--
+               <div class="col-md-3 col-sm-6">
+
+                    <h3 class="menu_head">Useful Links</h3>
+
+                    <div class="footer_menu">
+                        <ul>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#"> inventore natus ullam eum</a></li>
+                            <li><a href="#">consectetur adipisicing elit.</a></li>
+                            <li><a href="#">Frequently Asked Questions</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                -->
+                <div class="col-md-3 col-sm-6" style="position: relative; left:15%;">
+                    <h3 class="menu_head">Contact us</h3>
+                    <div class="footer_menu_contact">
+                         <ul>
+                            <li> <i class="fa fa-home"></i>
+                                <span>IIT Kharagpur  </span></li>
+                            <li><i class="fa fa-globe"></i>
+                                <span> kossiitkgp@gmail.com</span></li>
+                            <!--<li><i class="fa fa-phone"></i>
+                                <span> ranjan.smruti75@gmail.com</span></li>-->
+                           <!-- <li><i class="fa fa-map-marker"></i>-->
+                            <!--<span> www.web.com</span></li>-->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6"style="position: relative; left:30%;">
+                    <h3 class="menu_head">Tags</h3>
+                    <div class="footer_menu tags">
+                        <a href="https://opensource.org/" target="_blank"> Open Source</a>
+                     <!--   <a href="#"> User Interface</a>
+                        <a href="#"> Graphics</a>
+                        <a href="#"> Web Design</a>
+                        <a href="#"> Development</a>
+                        <a href="#"> Asp.net</a>
+                        <a href="#"> Bootstrap</a>
+                        <a href="#"> Joomla</a>
+                        <a href="#"> SEO</a>
+                        <a href="#"> Wordepress</a>
+                        -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer_b">
+        <div class="container">
+            <div class="row" style="padding-bottom: 20px;">
+                <div class="col-md-6">
+                   <div class="footer_bottom">
+                       <!--  <p class="text-block"> &copy; Copyright reserved to <span>Cyprass </span></p> -->
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="footer_mid pull-right">
+                        <ul class="social-contact list-inline">
+                            <li> <a href="https://www.facebook.com/iitkgpfc/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="mailto:kossiitkgp@gmail.com"><img src="{% static "images/gmail.png" %}" alt="" class="img-responsive">
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer Area End -->
+
+
+
+<!-- Back To Top Button -->
+    <section id="back-top">
+        <a href="#slider_part" class="scroll"></a>
+    </section>
+    <!-- End Back To Top Button -->
+
+
+
+<!-- Javascript Files
+    ================================================== -->
+    <!-- initialize jQuery Library -->
+
+   <!-- Javascript Files
+    ================================================== -->
+    <!-- initialize jQuery Library -->
+
+    <!-- initialize jQuery Library -->
+        <!-- Main jquery -->
+        <script type="text/javascript" src="{% static "js/jquery.js" %}"></script>
+        <!-- Bootstrap jQuery -->
+         <script src="{% static "js/bootstrap.min.js" %}"></script>
+        <!-- Owl Carousel -->
+        <script src="{% static "js/owl.carousel.min.js" %}"></script>
+        <!-- Isotope -->
+        <script src="{% static "js/jquery.isotope.js" %}"></script>
+        <!-- Pretty Photo -->
+        <script type="text/javascript" src="{% static "js/jquery.prettyPhoto.js" %}"></script>
+        <!-- SmoothScroll -->
+        <script type="text/javascript" src="{% static "js/smooth-scroll.js" %}"></script>
+        <!-- Image Fancybox -->
+        <script type="text/javascript" src="{% static "js/jquery.fancybox.pack8cbb.js?v=2.1.5" %}"></script>
+        <!-- Counter  -->
+        <script type="text/javascript" src="{% static "js/jquery.counterup.min.js" %}"></script>
+        <!-- waypoints -->
+        <script type="text/javascript" src="{% static "js/waypoints.min.js" %}"></script>
+        <!-- Bx slider -->
+        <script type="text/javascript" src="{% static "js/jquery.bxslider.min.js" %}"></script>
+        <!-- Scroll to top -->
+        <script type="text/javascript" src="{% static "js/jquery.scrollTo.js" %}"></script>
+        <!-- Easing js -->
+        <script type="text/javascript" src="{% static "js/jquery.easing.1.3.js" %}"></script>
+       <!-- PrettyPhoto -->
+        <script src="{% static "js/jquery.singlePageNav.js" %}"></script>
+        <!-- Wow Animation -->
+        <script type="{% static "js/javascript"%}" src="{% static "js/wow.min.js" %}"></script>
+        <!-- Google Map  Source -->
+        <script type="text/javascript" src="{% static "js/gmaps.js" %}"></script>
+       <!-- Custom js -->
+        <script src="{% static "js/custom.js" %}"></script>
+        <script src="{% static "js/shorten.js" %}"></script>
+       <script>
+  
+        
+              $('.portfolio-slider').bxSlider({
+                mode: 'fade',
+                autoControls: false
+              });
+        </script>
+
+		<script type="text/javascript">
+			
+			
+				$('#article').shorten(
+					{
+						"showChars" :210
+					});
+			
+			
+		</script>
+		<script type="text/javascript">
+			
+			
+				$('#android').shorten(
+					{
+						"showChars" :210
+					});
+			
+			
+		</script>
+    </body>
+
+<!-- Mirrored from www.shape.themeturn.com/html/cyprass/homepage/portfolio-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 14 May 2016 11:19:22 GMT -->
+</html>
